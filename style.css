@@ -384,6 +384,9 @@ nav .fa-solid{
     .about-col-1{
         margin-bottom: 30px;
     }
+    .swiper{
+        flex-basis:content;
+    }
     .about-col-2{
         font-size: 14px;
     }
