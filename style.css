@@ -381,6 +381,10 @@ nav .fa-solid{
     .sub-title{
         font-size: 40px;
     }
+    .swiper-slide img{
+        width:100%;
+        height:auto;
+    }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
