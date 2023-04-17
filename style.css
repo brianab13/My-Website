@@ -350,6 +350,9 @@ nav .fa-solid{
         margin-top: 30px 0;
         margin-right: -31px;
     }
+    .logo{
+        width: 200px;
+    }
     nav .fa-solid{
         display: block;
         font-size: 25px;
