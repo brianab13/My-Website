@@ -66,7 +66,7 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-size: 40px;
-    margin-top: 18%;
+    margin-top: 15%;
 }
 .header-text h1 span{
     color: #b16dad;
@@ -111,7 +111,10 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
-
+.about-col-2 p{
+    font-size:18px;
+    line-height: 1.4;
+}
 .sub-title{
     font-size: 60px;
     font-weight: 600;
@@ -123,7 +126,7 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -149,7 +152,7 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span {
     color: #7f5df9;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 .tab-contents{
@@ -195,11 +198,12 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #9177ef;
+    background: #7253e2;
     transform: translateY(-10px);
 }
 .services-list div p{
     color: #fff;
+    font-size: 15px;
 }
 /*------------------------------------My Work---------------------------------------*/
 #portfolio{
@@ -221,6 +225,8 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    background-color:#fff;
+    opacity: 0.9;
 }
 .layer{
     width: 100%;
@@ -235,7 +241,7 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 30px;
     text-align: center;
     font-size: 14px;
     transition: 0.5s;
@@ -243,9 +249,20 @@ nav ul li a:hover::after{
 .layer h3{
     color: #fff;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 .layer p{
     color: #fff;
+    font-size: 15px;
+}
+.print{
+    margin-top: 35px;
+    font-size: 20px;
+    display: inline-block;
+}
+.print a{
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .work:hover img{
     transform: scale(1.1);
@@ -253,23 +270,68 @@ nav ul li a:hover::after{
 .work:hover .layer{
     height: 100%;
 }
-.btn{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1 px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    color: #fff;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: #ff004f;
-}
-.swiper-slide-1 img{
+
+/*------------------------------Test-----------------------------------*/
+.modal1, .modal2, .modal3{
+    position: fixed;
+    height: 100vh;
     width: 100%;
-    border-radius: 15px;
-    height:fit-content;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+    width: 80vw;
+    height: 70vh;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content img{
+    height: 425px;
+
+}
+h4, button{
+    margin: 15px 0;
+}
+.close, 
+.close:link, 
+.close:visited{
+    color: #ababab;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+    display: inline-block;
+    line-height: 1;
+    transition: all 0.2s;
+}
+.close:hover{
+    color: #413296;
+}
+.modal1:target, .modal2:target, .modal3:target{
+    opacity: 1;
+    visibility: visible;
+}
+.modal1:target .content, .modal2:target .content, .modal3:target .content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
 }
 /*----------------------------------contact-------------------------------------*/
 .contact-left{
@@ -282,13 +344,22 @@ nav ul li a:hover::after{
     margin-top: 30px;
     color: #466cf8;
 }
+.contact-left p i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.contact-left h2{
+    font-size: 15px;
+    color: #ababab;
+    line-height: 1.4;
+}
 .social-icons{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
-    margin-right: 15px;
+    margin-right: 25px;
     color: #fff;
     display: inline-block;
     transition: transform 0.5s;
@@ -320,17 +391,22 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    border-radius: 15px;
 }
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     background: #262626;
     font-weight: 100;
     margin-top: 20px;
     color: #fff;
 }
-
+#msg{
+    color: #e39ef1;
+    margin-top: 20px;
+    display: block;
+}
 /*----------------------------------css for small screens-----------------*/
 nav .fa-solid{
     display: none;
@@ -381,10 +457,6 @@ nav .fa-solid{
     .sub-title{
         font-size: 40px;
     }
-    .swiper-slide img{
-        width:100%;
-        height:auto;
-    }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
@@ -392,7 +464,11 @@ nav .fa-solid{
         margin-bottom: 30px;
     }
     .swiper{
-        flex-basis:content;
+        flex-basis: content;
+    }
+    .swiper-slide img{
+        width:100%;
+        height:auto;
     }
     .about-col-2{
         font-size: 14px;
@@ -406,9 +482,13 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
-}
-#msg{
-    color: #e39ef1;
-    margin-top: -40px;
-    display: block;
+    .modal1, .modal2, .modal3{
+        object-fit: contain;
+    }
+    .content{
+        object-fit: contain;
+    }
+    .content img{
+        width: 400px;
+    }
 }

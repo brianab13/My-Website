@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briana Barajas | Digital Marketer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da69297c3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+             <img src="Logo.svg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p style="text-align: right;">Professional<br>Digital Marketer</p>
+            <h1 style="text-align: right;">I help you <span>achieve</span><br> your
+            marketing goals.</h1>
+        </div>
+    </div>
+</div>
+<!---------------------------------------about------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="main.1.JPEG"></div>
+                  <div class="swiper-slide"><img src="main.2.JPEG"></div>
+                  <div class="swiper-slide"><img src="main.3.JPEG"></div>
+                  <div class="swiper-slide"><img src="main.12.jpg"></div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, my name is Briana Barajas and I recently started my career in Digital Marketing.
+                    I am a hard worker, and I am always willing to try new things to see what works best. The
+                    world of digital marketing is constantly growing, and I am excited to see what I will
+                    learn on the job.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="certifications">
+                        <ul>
+                            <li><span>Google Ads Search</span><br>Certification from Google Ads in Paid Search</li>
+                            <li><span>Google Ads Display</span><br>Certifcation from Google Ads in Display Ads</li>
+                            <li><span>Google Analytics</span><br>Certification from Google in Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Paid Search</span><br>Pay-Per-Click, AdCopy</li>
+                            <li><span>SEO</span><br>Search Engine Optimization,  Website Auditing, Keyword Research</li>
+                            <li><span>Analytics</span><br>Data Analytics, Keyword Analyticsr</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>(In Progress)</span><br>Masters in Marketing Analytics<br>Western Governor's University</li>
+                            <li><span>2022-2023</span><br>In Demand Career Course Training</li>
+                            <li><span>2017</span><br>Bachelors of Interdisciplinary Studies<br>University of Texas Rio Grande Valley</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------services------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cart-shopping" style="color: #e39ef1"></i>
+                
+                <h2>Paid Search</h2>
+                <p>Paid Search is one of the best ways of drawing traffic to a website. I can help using
+                    Google Ads (PPC), Facebook Ads, and Instagram Ads in order to increase your sales goals 
+                    and grow your business.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe" style="color: #e39ef1;"></i>
+                <h2>SEO</h2>
+                <p>Search Engine Optimization (SEO) is the heart when it comes to creating a website presence.
+                    I can help optimize your website by creating audits for your website to see
+                    where it needs improvement. This creates a positive user experience 
+                    and see organic traffic growth.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-line" style="color: #e39ef1;"></i>
+                <h2>Analytics</h2>
+                <p>I analyze data collected from your website to create data driven decisions that will allow
+                    for your website to grow. I also use keyword research to see which words to negate that will
+                    guide targeted users to your website.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------------My Portfolio--------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="ppc.svg">
+                <div class="layer">
+                    <h3>Paid Search</h3>
+                    <p>In this example, I used adcopy to create ads for this business while also using Google Sheets to stay
+                        organized. After creating the ads, I input them in Google Ads. Data from Google Ads can be used 
+                        to demonstrate how producing effective ads increases website traffic for a business.</p>
+                    <div class="print">    
+                        <a href="#modal1"><i class="fa-regular fa-image" style="color: #ffffff;"></i></a>
+                            <a href="paid.search.sample.xlsx"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="seov2.svg">
+                <div class="layer">
+                    <h3>SEO Audit</h3>
+                    <p>In this example, I conducted an assessment of this website to find its flaws. This is helpful for 
+                        improving a website's optimization to boost organic traffic. I gathered information 
+                        on the website using a variety of methods to provide as much detail as possible 
+                        about how the business may make improvements.</p>
+                    <div class="print">
+                            <a href="#modal2"><i class="fa-regular fa-image" style="color: #ffffff;"></i></a> 
+                            <a href="seo.audit.sample.pdf"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="research.svg">
+                <div class="layer">
+                    <h3>Keyword Research</h3>
+                    <p>In this example, I used Keyword Research Planner to identify useful keywords that are beneficial for this 
+                        company. Doing keyword research helps with optimizing a website so they can show up
+                        when a user is searching for that specific keyword.</p>
+                    <div class="print">
+                            <a href="#modal3"><i class="fa-regular fa-image" style="color: #ffffff;"></i></a> 
+                            <a href="Keyword.research.sample.pdf"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------modal----------------------------->
+
+<div id="modal1" class="modal1">
+    <div class="content">
+        <a href="#test" class="close">&Cross;</a>
+        <h4>Here is an image of entire sheet. Click the other icon to download the full sheet.</h4>
+        <img src="img.2.png">
+    </div>
+</div>
+
+<div id="modal2" class="modal2">
+    <div class="content">
+        <a href="#test" class="close">&Cross;</a>
+        <h4>Here is an image of entire document. Click the other icon to download the full document.</h4>
+        <img src="seov2.png">
+    </div>
+</div>
+<div id="modal3" class="modal3">
+    <div class="content">
+        <a href="#test" class="close">&Cross;</a>
+        <h4>Here is an image of entire document. Click the other icon to download the full document.</h4>
+        <img src="research.png">
+    </div>
+</div>
+<!---------------------------------contact----------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <h2>Fill out the form to the right to message me about any information you may have regarding my work.
+                    You can also email me down below.
+                </h2>
+                <p><i class="fa-solid fa-envelope-open-text" style="color: #ffffff;"></i> info@brianabarajas.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form id="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ brianabarajas.com Made with <i class="fa-solid fa-heart" style="color: #d40202;"></i></p>
+    </div>
+</div>
+
+
+<!---------------------------------script----------------------------------->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_tqnlr0HkZIbAtPUNeh4vg5B1X_fV8z-vCb_3BqmgCYQQ-rGTrgkK3l3XFfnznrB9SQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+
+  loop: true,
+  autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+
+</body>
+</html>
