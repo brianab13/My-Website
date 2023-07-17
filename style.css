@@ -30,7 +30,8 @@ nav{
 }
 
 .logo{
-    width: 400px;
+    width: 100px;
+    border-radius: 20px;
     }
 
 nav ul li{
@@ -225,7 +226,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
-    background-color:#fff;
+    background: linear-gradient(#080f38, #e39ef17c);
     opacity: 0.9;
 }
 .layer{
@@ -365,7 +366,7 @@ nav .fa-solid{
         margin-right: -31px;
     }
     .logo{
-        width: 200px;
+        width: 60px;
     }
     nav .fa-solid{
         display: block;
